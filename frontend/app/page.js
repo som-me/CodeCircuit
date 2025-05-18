@@ -7,7 +7,7 @@ import Testimonials from "./components/Testimonials";
 import Moodboard from "./components/Moodboard";
 import Footer from "./components/Footer";
 import Loader from "./components/Loader";
-import Featuredtour from "./components/featuredtour";
+import Featuredtour from "./components/Featuredtour";
 
 export default function Home() {
   const [loading, setLoading] = useState(true);
