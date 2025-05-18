@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect, useRef } from "react";
 
-function hero() {
+function Hero() {
   const slides = [
     {
       title: "Visit Moroccan Islands",
@@ -64,4 +64,4 @@ function hero() {
   );
 }
 
-export default hero;
+export default Hero;

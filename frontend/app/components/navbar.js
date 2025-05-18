@@ -3,12 +3,12 @@
 import { FiMenu } from "react-icons/fi";
 import { IoClose } from "react-icons/io5";
 import React, { useState } from "react";
-import { useRouter } from "next/navigation"; // <-- For routing
+import { useRouter } from "next/navigation"; 
 import Som from "./som";
 
 function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [activeSection, setActiveSection] = useState("Visit"); // Default section
+  const [activeSection, setActiveSection] = useState("Visit"); 
   const router = useRouter();
 
   const menuItems = ["Visit", "Your Trips", "Features", "Ownership", "Support"];
@@ -25,7 +25,7 @@ function Navbar() {
 
   return (
     <>
-      {/* Top Navbar */}
+      
       <div className="header h-16 flex items-center justify-between px-8 relative z-20">
         <button className="menu shadow-2xs" onClick={() => setIsMenuOpen(true)}>
           <FiMenu size={24} color="black" style={{ cursor: "pointer" }} />
@@ -46,10 +46,10 @@ function Navbar() {
         </div>
       </div>
 
-      {/* Fullscreen Overlay Menu */}
+      
       {isMenuOpen && (
         <div className="fixed top-4 left-4 right-4 bottom-4 bg-[#f4eadc] rounded-2xl z-30 shadow-2xl p-8 flex flex-col">
-          {/* Overlay Header */}
+          
           <div className="flex justify-between items-center mb-8">
             <button
               onClick={() => setIsMenuOpen(false)}
@@ -63,9 +63,9 @@ function Navbar() {
             </button>
           </div>
 
-          {/* Main Overlay Layout */}
+          
           <div className="flex flex-row h-full">
-            {/* Left Sidebar */}
+            
             <div className="w-2/12 flex flex-col gap-6 text-left text-black text-sm font-medium">
               {menuItems.map((item) => (
                 <button
@@ -80,7 +80,7 @@ function Navbar() {
               ))}
             </div>
 
-            {/* Center Content */}
+            
             <div className="w-7/12 flex flex-col items-start justify-start gap-4 pl-8 pr-4">
               <div className="text-sm text-gray-500">View</div>
 
@@ -104,7 +104,7 @@ function Navbar() {
               )}
             </div>
 
-            {/* Right Sidebar (Explore) */}
+            
             <div className="w-3/12 flex flex-col gap-2 pl-4 border-l border-gray-300">
               <div className="text-sm text-gray-500 mb-2">Explore</div>
               <div className="flex flex-col overflow-y-auto gap-2 pr-2 h-full">

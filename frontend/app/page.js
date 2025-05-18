@@ -2,7 +2,7 @@
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Navbar from "./components/navbar";
-import Hero from "./components/hero";
+import Hero from "./components/Hero";
 import Testimonials from "./components/Testimonials";
 import Moodboard from "./components/Moodboard";
 import Footer from "./components/Footer";
