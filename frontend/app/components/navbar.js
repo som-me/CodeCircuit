@@ -5,6 +5,7 @@ import { IoClose } from "react-icons/io5";
 import React, { useState } from "react";
 import { useRouter } from "next/navigation"; 
 import Som from "./som";
+import Image from "next/image";
 
 function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -86,15 +87,19 @@ function Navbar() {
 
               {activeSection === "Visit" ? (
                 <div className="flex flex-col gap-4 w-full">
-                  <img
+                  <Image
                     src="/6.svg"
                     alt="Example 1"
-                    className="rounded-lg h-[280px] bg-cover bg-center w-full transition-transform duration-300 hover:scale-95"
+                    width={400}
+                    height={280}
+                    className="rounded-lg bg-cover bg-center w-full transition-transform duration-300 hover:scale-95"
                   />
-                  <img
+                  <Image
                     src="/7.svg"
                     alt="Example 2"
-                    className="rounded-lg h-[280px] bg-cover bg-center w-full transition-transform duration-300 hover:scale-95"
+                    width={400}
+                    height={280}
+                    className="rounded-lg bg-cover bg-center w-full transition-transform duration-300 hover:scale-95"
                   />
                 </div>
               ) : (
