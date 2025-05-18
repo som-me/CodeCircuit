@@ -1,0 +1,20 @@
+@import "tailwindcss";
+
+::selection {
+  background-color: #ff5100;
+  color: black;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  animation: marquee 40s linear infinite;
+}
